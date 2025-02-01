@@ -1,0 +1,105 @@
+
+.gallery-container{
+  width: 80%;
+  margin: 2rem auto;
+}
+.gallery-text{
+  text-align: center;
+  margin: 20px 30px;
+}
+.gallery-wrapper{
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(24, 5vw);
+  gap: 10px;
+}
+.photos{
+  cursor: pointer;
+}
+.photos img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#img1{
+  grid-column: 1 / span 8;
+    grid-row: 1 / span 5;
+}
+#img2{
+  grid-column: 9 / span 8;
+  grid-row: 1 / span 5;
+}
+#img3{
+  grid-column: 1 / span 8;
+  grid-row: 6 / span 7;
+}
+#img4{
+  grid-column: 9 / span 8;
+  grid-row: 6 / span 7;
+}
+#img5{
+  grid-column: 1 / span 5;
+  grid-row: 13 / span 5;
+}
+#img6{
+  grid-column: 6 / span 7;
+  grid-row: 13 / span 7;
+}
+#img7{
+  grid-column: 13 / span 4;
+  grid-row: 13 / span 7;
+}
+#img8{
+  grid-column: 1 / span 5;
+  grid-row: 18 / span 7;
+}
+#img9{
+  grid-column: 6 / span 11;
+  grid-row: 20 / span 5;
+}
+dialog{
+  display: flex;
+  align-items: center;
+  /* padding: 20px; */
+  border: none;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+}
+dialog::backdrop{
+  background-color: rgba(0,0,0,0.7);
+}
+.dialog-image-container{
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+}
+dialog img{
+  width: 100%;
+  object-fit: contain;
+  /* display: flex;
+  height: 100%; */
+  /* width: fit-content; */
+  /* margin: 0 auto; */
+  /* object-fit: cover; */
+
+  width: 100%;
+  object-fit: contain;
+}
+dialog button{
+  border-radius: 177px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+dialog button img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+}

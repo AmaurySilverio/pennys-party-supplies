@@ -1,0 +1,134 @@
+.contact-container{
+  margin: 30px 0;
+}
+.contact-header{
+  text-align: center;
+  padding: 0 20px;
+}
+.contact-header h5{
+  max-width: 665px;
+  margin: 0 auto;
+  width: 75%;
+}
+.contact-header h5:last-child{
+  margin-top: 10px;
+}
+.contact-header h5 span{
+  text-decoration: underline;
+}
+.form-container{
+  width: 75%;
+  /* max-width: 625px; */
+  max-width: 665px;
+  margin: 10px auto;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 40px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin: 30px 0; */
+  gap: 5px;
+}
+#name,#phone,#email,#start-date,#end-date,#occasion,#inquiry,#anything-else{
+  padding: 8px 20px;  
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  border: 1px solid #fff;
+}
+#name::placeholder,#phone::placeholder,#email::placeholder,#occasion::placeholder,#inquiry::placeholder,#anything-else::placeholder{
+  color: #b1b1b1;
+}
+label[for="name"]{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 5px;
+}
+.names-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.phone-container{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  /* justify-content: center; */
+  gap: 5px;
+}
+label[for=phone]{
+  display: flex;
+  /* flex-direction: column; */
+}
+input[id="phone"]{
+  width: 100%;
+}
+#email{
+  width: 100%;
+}
+input[type=date]{
+  margin-left: 5px;
+}
+label p{
+  font-size: 12px;
+  COLOR: gray;
+  margin-left: 6px;
+}
+.dates-container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.dates-content{
+  display: flex;
+  justify-content: space-around;
+}
+label[for=start-date]{
+  margin-bottom: 2px;
+}
+input[id=email], input[id=phone], label[for=end-date], textarea[id="occasion"], textarea[id="inquiry"], textarea[id="anything-else"]{
+  margin-bottom: 10px;
+}
+textarea{
+  width: 100%;
+}
+.contact-form a{
+  margin: 10px auto 0;
+  width: 100%;
+}
+.contact-form a button{
+  width: 100%;
+}
+@media screen and (max-width: 790px) {
+  .dates-content label{
+    display: flex;
+    flex-direction: column;
+  }
+  input[type=date]{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .dates-content{
+    flex-direction: column;
+    width: fit-content;
+    /* width: 40%; */
+    gap: 5px;
+  }
+  .names-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  label[for="name"]{
+    width: 100%;
+  }
+  .phone-container{
+    width: 158px;
+  }
+}
