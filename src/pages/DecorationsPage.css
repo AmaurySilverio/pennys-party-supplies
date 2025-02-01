@@ -75,6 +75,7 @@ dialog::backdrop{
 .dialog-image-container{
   display: flex;
   height: 100%;
+  /* FIX THISSSS */
   margin: 0 auto;
 }
 dialog img{

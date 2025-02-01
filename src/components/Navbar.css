@@ -30,6 +30,9 @@
   display: flex;
   align-items: center;
 }
+.navbar-logo img{
+  margin-left: 0.1rem;
+}
 
 .fa-typo3 {
   margin-left: 0.5rem;
@@ -122,7 +125,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 40%);
+    /* transform: translate(25%, 40%); */
+    transform: translate(25%, 26%);
   }
 
   .menu-icon {
@@ -130,7 +134,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 50%);
+    /* transform: translate(-100%, 50%); */
+    transform: translate(-100%, 34%);
     font-size: 1.8rem;
     cursor: pointer;
   }

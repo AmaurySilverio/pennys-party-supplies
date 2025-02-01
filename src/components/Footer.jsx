@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
-              PPS <i className="fab fa-typo3"></i>
+              PPS <img src="../images/flower.svg" />
             </Link>
           </div>
           <div className="social-icons">

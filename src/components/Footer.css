@@ -112,6 +112,9 @@
   align-items: center;
   margin-bottom: 16px;
 }
+.social-logo img{
+  margin-left: 0.1rem;
+}
 .website-rights{
   color: #fff;
   margin-bottom: 16px;
